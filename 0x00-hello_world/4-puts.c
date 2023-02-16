@@ -1,3 +1,5 @@
+/* A c program that prints using puts */
+
 #include <stdio.h>
 int main(void)
 {
