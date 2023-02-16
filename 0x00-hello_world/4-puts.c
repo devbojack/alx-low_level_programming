@@ -3,9 +3,9 @@
  * A c program using puts
  */
 int main(void)
-/*
- * A main start point
- */
+	/*
+ 	* A main start point
+ 	*/
 {
 	/*
 	 * Cmon betty
