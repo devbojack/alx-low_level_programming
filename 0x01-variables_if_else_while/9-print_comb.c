@@ -6,7 +6,6 @@
  * start of for loop 
  * printing the numbers
  * Adding the spaces and the comma
- * New line
  * Return: Always 0
  */
 int main(void)
