@@ -2,10 +2,8 @@
 
 /**
  * main- Entry point
- * declaration and initialization of myStart
- * start of for loop 
- * printing the numbers
- * Adding the spaces and the comma
+ * Prints all possible combinations of single-digit numbers
+ * 
  * Return: Always 0
  */
 int main(void)
