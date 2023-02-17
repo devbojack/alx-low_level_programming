@@ -14,7 +14,6 @@ int main(void)
 {
 	int myNumStart;
 	char myCharStart;
-
 	for (myNumStart = 0; myNumStart <= 9; myNumStart++)
 		putchar(myNumStart + '0');
 	for (myCharStart = 'a'; myCharStart <= 'f'; myCharStart++)
