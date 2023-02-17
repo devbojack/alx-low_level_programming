@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (rightNumber = 0; rightNumber <= 9; rightNumber++)
 		{
-			if(rightNumber > leftNumber)
+			if (rightNumber > leftNumber)
 			{
 				putchar(leftNumber + '0');
 				putchar(rightNumber + '0');
