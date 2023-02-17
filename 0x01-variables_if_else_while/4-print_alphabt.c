@@ -19,7 +19,7 @@ int main(void)
 			myA = myA + 1;
 			continue;
 		}
-		else 
+		else
 			putchar(myA);
 		myA++;
 	}
