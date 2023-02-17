@@ -3,11 +3,12 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main- Entry point
  * an unassigned n int
  * variable n initilised
  * conditional statement
- * Return : Always 0
+ * New line
+ * Return: Always 0
  */
 int main(void)
 {
