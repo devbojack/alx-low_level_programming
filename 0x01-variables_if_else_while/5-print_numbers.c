@@ -12,9 +12,8 @@ int main(void)
 {
 	int myStart;
 	
-	for (myStart=0 ; myStart < 10; myStart++)
-		printf("%d",myStart);
+	for (myStart = 0 ; myStart < 10; myStart++)
+		printf("%d", myStart);
 	putchar('\n');
 	return (0);
 }
-
