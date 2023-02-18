@@ -10,7 +10,7 @@ int main(void)
 {
 	int leftNumber;
 	int rightNumber;
-	
+
 	for (leftNumber = 0; leftNumber <= 98; leftNumber++)
 	{
 		for (rightNumber = leftNumber + 1; rightNumber <= 99; rightNumber++)
