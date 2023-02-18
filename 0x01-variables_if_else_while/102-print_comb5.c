@@ -8,41 +8,23 @@
  */
 int main(void)
 {
-	int leftNumberLeft;
-	int leftNumberRight;
-	int rightNumberLeft;
-	int rightNumberRight;
-
-	for (leftNumberLeft = 0; leftNumberLeft <= 9; leftNumberLeft++)
+	int leftNumber;
+	int rightNumber;
+	
+	for (leftNumber = 0; leftNumber <= 98; leftNumber++)
 	{
-		for (leftNumberRight = 0; leftNumberRight <= 9; leftNumberRight++)
+		for (rightNumber = 0; rightNumber <= 99; rightNumber++)
 		{
-			for (rightNumberLeft = 0; rightNumberLeft <= 9; rightNumberLeft++)
-			{
-				for (rightNumberRight = 0; rightNumberRight <= 9; rightNumberRight++)
-				{
-					if (leftNumberLeft <= rightNumberLeft)
-					{
-						if (leftNumberRight < rightNumberRight)
-						{
-							putchar(leftNumberLeft + '0');
-							putchar(leftNumberRight + '0');
-							putchar(' ');
-							putchar(rightNumberLeft + '0');
-							putchar(rightNumberRight + '0');
-							if (leftNumberLeft == 9 && leftNumberRight == 8 && rightNumberLeft ==9 && rightNumberRight == 9)
-								continue;
-							else
-							{
-								putchar(',');
-								putchar(' ');
-							}
-						}
-					}
-					else 
-						continue;
-				}
-			}
+			putchar(leftNumber + '0');
+			putchar(leftNumber + '0');
+			putchar(' ');
+			putchar(rightNumber + '0');
+			putchar(rightNumber + '0');
+
+			if (leftNumber == 98 && rightNumber == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
