@@ -1,7 +1,6 @@
 #include "main.h"
 
-/**
- * main.h - custom header file 
+/** 
  * main - Entry point
  * print _putchar
  *
