@@ -5,10 +5,11 @@
  * main - Entry point
  * print _putchar
  *
- * return : 0 always
+ * Return : 0 always
  */
 
 int main(void)
+
 {
 	_putchar('_');
 	_putchar('p');
