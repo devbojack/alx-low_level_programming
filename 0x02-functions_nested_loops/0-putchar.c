@@ -1,10 +1,10 @@
 #include "main.h"
 
- /**
-  * main- Entry point
-  *
-  * Return: Always 0
-  */
+/**
+ * main - entry point
+ *
+ * Return: 0 always
+ */
 
 int main(void)
 {
