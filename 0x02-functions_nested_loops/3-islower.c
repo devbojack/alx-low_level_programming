@@ -4,7 +4,7 @@
  * _islower - Check for lowercase letters
  * @c: Parameter of type int to be checked
  *
- * Return void
+ * Return: 0 if false, 1 if true
  */
 
 int _islower(int c)
