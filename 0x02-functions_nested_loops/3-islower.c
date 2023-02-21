@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _islower - entry point
+ * _islower - Check for lowercase letters
+ * @c: Parameter of type int to be checked
  *
  * Return void
  */
