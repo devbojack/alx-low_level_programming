@@ -2,8 +2,9 @@
 
 /**
  * main - entry point
+ * @c - The number to be checked
  *
- * return - 0 always
+ * Return - 0 always
  */
 
 int _isupper(int c)
