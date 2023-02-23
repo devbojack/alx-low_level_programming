@@ -2,8 +2,9 @@
 
 /**
  * print_line - Print a line
+ * @n: Number of line to draw
  *
- * Return - A line
+ * Return - A line, empty or skip
  */
 
 void print_line(int n)
@@ -20,6 +21,7 @@ void print_line(int n)
 		{
 			_putchar(95);
 		}
+
 		_putchar('\n');
 	}
 }
