@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _isupper - check is char is uper
  * @c - The number to be checked
