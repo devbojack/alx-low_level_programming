@@ -10,7 +10,9 @@ void print_most_numbers(void)
 	int myStart;
 
 	for (myStart = 0; myStart <= 9; myStart++)
+	{
 		_putchar(myStart + '0');
+	}
 
 	_putchar('\n');
 }
