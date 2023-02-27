@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - Takes a ointer & updates it to *n
- * @*n : Pointer
+ * @n : Pointer
  *
  * Return - void
  */
