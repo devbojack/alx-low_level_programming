@@ -3,7 +3,7 @@
 /**
  * _strstr - Locates a substring
  * @haystack: String to search into
- * @needle - Substring to seaarch for
+ * @needle: Substring to seaarch for
  *
  * Return: Pointer or NULL
  */
@@ -16,7 +16,9 @@ char *_strstr(char *haystack, char *needle)
 		while (needle[y])
 		{
 			if (haystack[x + y] != needle[y])
+			{
 				break;
+			}
 
 			y++;
 		}
