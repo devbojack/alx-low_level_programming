@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strstr - Locates a substring
+ * _strstr - Locates a substring
  * @haystack: String to search into
  * @needle - Substring to seaarch for
  *
