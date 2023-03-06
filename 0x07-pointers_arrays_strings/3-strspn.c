@@ -12,7 +12,6 @@ unsigned int _strspn(char *s, char *accept)
 	int sLen, aLen, x, y;
 	unsigned int byteNum = 0;
 
-
 	for (sLen = 0; s[sLen] != '\0'; sLen++)
 		sLen++;
 
@@ -21,10 +20,13 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (x = 0; x <= aLen; x++)
 	{
-		for (y = 0; y <= sLen && s[y] != 32; y++)
+		for (y = 0; y <= sLen; y++)
 		{
-			if (accept[x] == s[y])
-				byteNum++;
+			if (s[y] != 32)
+			{
+				if (accept[x] == s[y])
+					byteNum++;
+			}
 		}
 	}
 
