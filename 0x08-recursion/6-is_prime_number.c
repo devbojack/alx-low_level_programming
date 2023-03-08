@@ -18,7 +18,7 @@ int is_prime_number(int n)
  * @n: Value
  * @x: Divider
  *
- * Returns: primer
+ * Return: 0 if not primer, 1 if prime
  */
 int _primer(int n, int x)
 {
