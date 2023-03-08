@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 /**
  * _doubler - Doubles for square
  * @n: Value for squareroot
- * @i: Doubler
+ * @x: Doubler
  *
  * Return: Square root or -1
  */
