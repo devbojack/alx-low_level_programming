@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - adds positive numbers.
+ * main - adds positive numbers
  * @argc: CL arguments length
  * @argv: CL arguments
  *
@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int len,x, total = 0;
+	int len, x, total = 0;
 
 	if (argc < 1)
 	{
