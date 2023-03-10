@@ -4,9 +4,9 @@
 /**
  * main - multiplies two numbers.
  * @argc: CL argumentts length
- * @argv: CL arguments 
+ * @argv: CL arguments
  *
- * Return: 1 if no args, 0 if oppsote
+ * Return: 1 if error, 0 if good
  */
 int main(int argc, char *argv[])
 {
