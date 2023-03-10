@@ -6,12 +6,12 @@
  * @argc: CL argumentts length
  * @argv: CL arguments 
  *
- * Return: Always 0
+ * Return: 1 if no args, 0 if oppsote
  */
 int main(int argc, char *argv[])
 {
 	int x, y, z;
-	
+
 	if (argc < 3)
 	{
 		printf("Error\n");
