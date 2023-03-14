@@ -1,4 +1,8 @@
+#include <stdlib.h>
 #include "main.h"
+
+int len(char *str);
+
 /**
 * argstostr - a function that concatenates all the arguments of your program
 *@ac: count of args passed to the function
@@ -54,4 +58,3 @@ int len(char *str)
 		}
 	return (len);
 }
-
