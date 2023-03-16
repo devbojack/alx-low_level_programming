@@ -6,19 +6,19 @@
  * @min: min size
  * @max: Max size
  *
- * rETURN: 0 or pointer
+ * Return: 0 or pointer
  */
 int *array_range(int min, int max)
 {
 	int *a, i = 0;
 
 	if (min > max)
-		return (NULL);
+		return (0);
 
 	a = malloc((sizeof(int) * (max - min)) + sizeof(int));
 
 	if (a == NULL)
-		return (NULL);
+		return (0);
 
 	while (min <= max)
 	{
