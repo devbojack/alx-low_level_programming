@@ -13,8 +13,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int x = 0;
 	char* stringarr;
 
-	va_start(params, n);
-
 	if (n > 0)
 	{
 		va_start(params, n);
