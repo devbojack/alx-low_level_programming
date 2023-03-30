@@ -2,7 +2,7 @@
 
 /**
  * print_list - Prints all elemments of a list
- * @list_t: Struct
+ *
  * @h: List pointer
  *
  * Return: size_t
