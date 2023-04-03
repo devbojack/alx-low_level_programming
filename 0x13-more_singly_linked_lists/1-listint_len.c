@@ -2,8 +2,7 @@
 
 /**
  * listint - returns the number of elements
- * @h: List pointer head
- *
+ * 
  * Return: No. of elemts
  */
 size_t listint_len(const listint_t *h)
