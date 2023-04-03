@@ -2,7 +2,6 @@
 
 /**
  * print_list - Prints all elements of a list
- *
  * @h: List pointer
  *
  * Return: size_t
