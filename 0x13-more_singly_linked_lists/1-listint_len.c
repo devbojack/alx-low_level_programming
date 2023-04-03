@@ -2,7 +2,8 @@
 
 /**
  * listint - returns the number of elements
- * 
+ * @h: list pointer head
+ *
  * Return: No. of elemts
  */
 size_t listint_len(const listint_t *h)
@@ -15,5 +16,6 @@ size_t listint_len(const listint_t *h)
 		count++;
 		ptr = ptr->next;
 	}
+
 	return (count);
 }
