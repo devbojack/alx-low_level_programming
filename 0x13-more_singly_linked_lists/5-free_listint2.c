@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint2 - Freean LL
+ * free_listint2 - Free an LL
  * @head: Head pointer
  *
  * Return: void
@@ -10,18 +10,16 @@ void free_listint2(listint_t **head)
 {
 	listint_t *ptr;
 
-	if(head)
+	if(head != NULL)
 	{
-		while (*head)
+		while (*head != NULL)
 		{
 			ptr = *head;
 			*head = (*head)->next;
 			free(ptr);
 		}
 	}
-	else
-		return;
-	
+
 	free(*head);
-	head = 0;
+	*head = NULL;
 }
