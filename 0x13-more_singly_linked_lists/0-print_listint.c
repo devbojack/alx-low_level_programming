@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - Prints all elements of a list
+ * print_listint - Prints all elements of a list
  * @h: List pointer
  *
  * Return: size_t
@@ -14,8 +14,9 @@ size_t print_listint(const listint_t *h)
 	while (x != NULL)
 	{
 		printf("%d\n", x->n);
-		count++;
 		x = x->next;
+		count++;
+
 	}
 	return (count);
 }
