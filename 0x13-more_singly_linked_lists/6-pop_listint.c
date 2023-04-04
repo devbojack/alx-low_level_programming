@@ -11,7 +11,9 @@ int pop_listint(listint_t **head)
 	int myN = 0;
 
 	if (*head == NULL)
+	{
 		return (0);
+	}
 	else
 	{
 		listint_t *temp = (*head)->next;
@@ -19,5 +21,6 @@ int pop_listint(listint_t **head)
 		free(*head);
 		*head = temp;
 	}
+
 	return (myN);
 }
