@@ -3,7 +3,7 @@
 /**
  * get_nodeint_at_index - Returns nth node
  * @head: list head pointer
- * @index;Index to return
+ * @index: Index to return
  *
  * Return: nth node or NULL
  */
