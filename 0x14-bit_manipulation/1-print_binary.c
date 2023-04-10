@@ -1,25 +1,6 @@
 #include "main.h"
 
-
-/**
-  * oneorzero - factorial to get 1 or 0
-  * @number: representing number
-  *
-  * Return: 0 or 1
-  */
-void oneorzero(unsigned long int number)
-{
-        if (number < 1)
-                return;
-
-        oneorzero(number >> 1);
-
-        if (number & 1)
-                _putchar('1');
-        else
-                _putchar('0');
-}
-
+void oneorzero(unsigned long int number);
 
 /**
  * print_binary - prints the binary representation
@@ -35,4 +16,24 @@ void print_binary(unsigned long int n)
 		return;
 	}
 	oneorzero(n);
+}
+
+
+/**
+  * oneorzero - factorial to get 1 or 0
+  * @number: representing number
+  *
+  * Return: void
+  */
+void oneorzero(unsigned long int number)
+{
+        if (number < 1)
+                return;
+
+        oneorzero(number >> 1);
+
+        if (number & 1)
+                _putchar('1');
+        else
+                _putchar('0');
 }
