@@ -3,7 +3,7 @@
 
 /**
   * oneorzero - factorial to get 1 or 0
-  * @n: representing number
+  * @number: representing number
   *
   * Return: 0 or 1
   */
