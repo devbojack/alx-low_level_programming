@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * get_bet - returns the value of a bit at index
- * @n: Rep umber
+ * get_bit - returns the value of a bit at index
+ * @n: Rep number
  * @index: Given index
  *
  * Return: Int or -1
@@ -33,5 +33,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		return (0);
 	}
+
 	return (-1);
 }
