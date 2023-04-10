@@ -3,7 +3,7 @@
 /**
  * create_file - creates a file
  * @filename: file name to create
- * @text_content: text content
+ * @text_content: content of text
  *
  * Return: 1 or -1
  */
@@ -22,12 +22,13 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
+
 	while (text_content[counter])
 	{
-		counter++;
+		counter = counter + 1;
 	}
 
-	if (text_content)
+	if (text_content != NULL)
 	{
 		write(size, text_content, counter);
 	}
