@@ -3,8 +3,8 @@
 void oneorzero(unsigned long int number);
 
 /**
- * print_binary - prints the binary representation
- * @n: rrepresnting numbeer
+ * print_binary - prints the binary rep
+ * @n: represnting numbeer
  *
  * Return: void
  */
@@ -15,6 +15,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
+
 	oneorzero(n);
 }
 
@@ -30,7 +31,8 @@ void oneorzero(unsigned long int number)
         if (number < 1)
                 return;
 
-        oneorzero(number >> 1);
+	oneorzero(number >> 1);
+
         if (number & 1)
 	{
                 _putchar('1');
