@@ -32,7 +32,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		write(size, text_content, counter);
 	}
-
 	close(size);
+
 	return (1);
 }
