@@ -31,9 +31,12 @@ void oneorzero(unsigned long int number)
                 return;
 
         oneorzero(number >> 1);
-
         if (number & 1)
+	{
                 _putchar('1');
+	}
         else
+	{
                 _putchar('0');
+	}
 }
