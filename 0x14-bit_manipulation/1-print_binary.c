@@ -21,11 +21,11 @@ void print_binary(unsigned long int n)
 
 
 /**
-  * oneorzero - factorial to get 1 or 0
-  * @number: representing number
-  *
-  * Return: void
-  */
+ * oneorzero - factorial to get 1 or 0
+ * @number: representing number
+ *
+ * Return: void
+ */
 void oneorzero(unsigned long int number)
 {
         if (number < 1)
