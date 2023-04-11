@@ -10,6 +10,7 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int counter;
+
 	counter = 0;
 
 	while (n)
