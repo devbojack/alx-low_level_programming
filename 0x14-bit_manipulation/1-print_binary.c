@@ -13,28 +13,25 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
+
 	oneorzero(n);
 }
 
 /**
  * oneorzero - factorial to get 1 or 0
- * @number: representing number
+ * @num: representing number
  *
  * Return: void/ nothing
  */
-void oneorzero(unsigned long int number)
+void oneorzero(unsigned long int num)
 {
-	if (number < 1)
+	if (num < 1)
 		return;
 
-	oneorzero(number >> 1);
+	oneorzero(num >> 1);
 
-	if (number & 1)
-	{
+	if (num & 1)
 		_putchar('1');
-	}
         else
-	{
 		_putchar('0');
-	}
 }
