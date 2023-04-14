@@ -6,13 +6,12 @@
 /**
  * checker - ELF file checker
  * @unchar: ELF param
- *
  * return: void
  */
 void checker(unsigned char *unchar)
 {
 	if (*(unchar) == 0x7f && *(unchar + 1) == 'E' &&
-			*(unchar + 2) == 'L' && *(unchar + 3) == 'F')
+		*(unchar + 2) == 'L' && *(unchar + 3) == 'F')
 	{
 		printf("ELF Header:\n");
 	}
@@ -26,7 +25,6 @@ void checker(unsigned char *unchar)
 /**
  * magic - Gives magic number
  * @unchar: ELF param
- *
  * return: void
  */
 void magic(unsigned char *unchar)
@@ -44,7 +42,6 @@ void magic(unsigned char *unchar)
 /**
  * class - Gives ELF class
  * @unchar: ELF param
- *
  * return: void
  */
 void class(unsigned char *unchar)
@@ -69,7 +66,6 @@ void class(unsigned char *unchar)
 /**
  * data - Gives the data type
  * @unchar: ELF param
- *
  * return: void
  */
 void data(unsigned char *unchar)
@@ -94,7 +90,6 @@ void data(unsigned char *unchar)
 /**
  * version - Gives version
  * @unchar: ELF param
- *
  * return: void
  */
 void version(unsigned char *unchar)
@@ -111,7 +106,6 @@ void version(unsigned char *unchar)
 /**
  * osorabi - Gives the OS/ABI
  * @unchar: ELF param
- *
  * return: void
  */
 void osorabi(unsigned char *unchar)
@@ -166,7 +160,6 @@ void osorabi(unsigned char *unchar)
  * thetype - Gives the type
  * @untype: given data
  * @unchar: ELF param
- *
  * return: void
  */
 void type(unsigned int untype, unsigned char *unchar)
@@ -203,7 +196,6 @@ void type(unsigned int untype, unsigned char *unchar)
  * entry - print the entry point
  * @unchar: ELF param
  * @unentry: data param
- *
  * return: void
  */
 void entry(unsigned int unentry, unsigned char *unchar)
@@ -221,7 +213,6 @@ void entry(unsigned int unentry, unsigned char *unchar)
  * main - read a ELF file.
  * @argc: the number of args
  * @argv: the Args
- *
  * Return: an interger 0
  */
 int main(int argc, char *argv[])
