@@ -52,7 +52,7 @@ void copy_file(const char *src, const char *dest)
  * main - main function
  * @argc: argument length
  * @argv: argument characters
- * 
+ *
  * Return: An int for success
  */
 int main(int argc, char **argv)
