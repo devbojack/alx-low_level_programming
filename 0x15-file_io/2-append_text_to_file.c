@@ -26,11 +26,14 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		counter++;
 	}
+	counter--;
 
 	if (text_content != NULL)
 	{
 		if (write(size, text_content, counter))
+		{
 			return (-1);
+		}
 	}
 
 	close(size);
