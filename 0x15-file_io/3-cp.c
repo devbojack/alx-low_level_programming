@@ -49,19 +49,19 @@ void copy_file(const char *src, const char *dest)
 }
 
 /**
-  * main - main function
-  * @argc: argument length
-  * @argv: argument characters
-  *
-  * Return: An int for success
-  */
+ * main - main function
+ * @argc: argument length
+ * @argv: argument characters
+ * 
+ * Return: An int for success
+ */
 int main(int argc, char **argv)
 {
-        if (argc != 3)
-        {
-                dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-                exit(97);
-        }
-        copy_file(argv[1], argv[2]);
-        exit(0);
+	if (argc != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	copy_file(argv[1], argv[2]);
+	exit(0);
 }
