@@ -49,7 +49,7 @@ void magic(unsigned char *unchar)
  */
 void class(unsigned char *unchar)
 {
-	printf(" Class:                             ");
+	printf("  Class:                             ");
 	if (unchar[EI_CLASS] == ELFCLASSNONE)
 	{
 		printf("This class is invalid\n");
@@ -116,7 +116,7 @@ void version(unsigned char *unchar)
  */
 void osorabi(unsigned char *unchar)
 {
-	printf(" OS/ABI:                            ");
+	printf("  OS/ABI:                            ");
 
 	if (unchar[EI_OSABI] == ELFOSABI_SYSV)
 	{
@@ -173,7 +173,7 @@ void type(unsigned int untype, unsigned char *unchar)
 {
 	unchar[EI_DATA] == ELFDATA2MSB ? untype = untype >> 8 : untype;
 
-	printf(" Type:                              ");
+	printf("  Type:                              ");
 
 	if (untype == ET_NONE)
 	{
