@@ -1,4 +1,7 @@
 #include "main.h"
+#include <elf.h>
+#define REV(n) ((n << 24) | (((n >> 16) << 24) >> 16) | \
+(((n << 16) >> 24) << 16) | (n >> 24))
 
 /**
  * checker - ELF file checker
@@ -8,12 +11,8 @@
  */
 void checker(unsigned char *unchar)
 {
-	bool checker1 = *(unchar) == 0x7f;
-	bool checker2 = *(unchar + 1) == 'E';
-	bool checker3 = *(unchar + 2) == 'L';
-	bool checker4 = *(unchar + 3) == 'F';
-
-	if (checker1 && checker2 && checker3 && checker4)
+	if (*(unchar) == 0x7f && *(unchar + 1) == 'E' &&
+			*(unchar + 2) == 'L' && *(unchar + 3) == 'F')
 	{
 		printf("ELF Header:\n");
 	}
@@ -180,7 +179,7 @@ void type(unsigned int untype, unsigned char *unchar)
 	{
 		printf("NONE (Unknown type)\n");
 	}
-	else if (e_type == ET_EXEC)
+	else if (untype == ET_EXEC)
 	{
 		printf("EXEC (Executable file)\n");
 	}
@@ -211,7 +210,7 @@ void entry(unsigned int unentry, unsigned char *unchar)
 {
 	if (unchar[EI_DATA] == ELFDATA2MSB)
 	{
-		unetry = REV(unentry);
+		unentry = REV(unentry);
 	}
 
 	printf("  Entry point address:               ");
@@ -228,7 +227,7 @@ void entry(unsigned int unentry, unsigned char *unchar)
 int main(int argc, char *argv[])
 {
 	int size, successread, successclose;
-	Elf64_Ehdr *file = NULL;
+	Elf64_Ehdr *file;
 
 	if (argc != 2)
 	{
@@ -253,26 +252,26 @@ int main(int argc, char *argv[])
 
 	if (successread == -1)
 	{
-		free(size);
+		free(file);
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", *(argv + 1));
 		exit(98);
 	}
-	verify(file->e_ident);
+	checker(file->e_ident);
 	magic(file->e_ident);
 	class(file->e_ident);
 	data(file->e_ident);
 	version(file->e_ident);
-	osabi(file->e_ident);
+	osorabi(file->e_ident);
 	printf("  ABI Version:                       ");
 	printf("%i\n", file->e_ident[EI_ABIVERSION]);
 	type(file->e_type, file->e_ident);
 	entry(file->e_entry, file->e_ident);
 	free(file);
-	successclose = close(fd);
+	successclose = close(size);
 
 	if (successclose)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd\n");
+		dprintf(STDERR_FILENO, "Error: Can't close file\n");
 		exit(98);
 	}
 	return (0);
