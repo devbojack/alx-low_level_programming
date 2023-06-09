@@ -12,7 +12,7 @@ int main(void)
 {
 	int myStart;
 
-	for (myStart = 0; myStart < 10; myStart++)
+	for (myStart = 0; myStart < 10; myStart=myStart + 1)
 		putchar(myStart + '0');
 	putchar('\n');
 	return (0);
